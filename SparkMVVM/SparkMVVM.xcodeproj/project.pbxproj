@@ -13,7 +13,8 @@
 		9B1C56662118DFD70072F456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C56642118DFD70072F456 /* LaunchScreen.storyboard */; };
 		9B1C56712118DFD70072F456 /* SparkMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C56702118DFD70072F456 /* SparkMVVMTests.swift */; };
 		9B1C567C2118DFD70072F456 /* SparkMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C567B2118DFD70072F456 /* SparkMVVMUITests.swift */; };
-		9B1C568A2118E0620072F456 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C56892118E0620072F456 /* QuestionsTableViewController.swift */; };
+		9B1C56902118E1FE0072F456 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C568C2118E1FE0072F456 /* QuestionsTableViewController.swift */; };
+		9B1C56922118E21B0072F456 /* QuestionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C56912118E21B0072F456 /* QuestionsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		9B1C56772118DFD70072F456 /* SparkMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparkMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1C567B2118DFD70072F456 /* SparkMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkMVVMUITests.swift; sourceTree = "<group>"; };
 		9B1C567D2118DFD70072F456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B1C56892118E0620072F456 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		9B1C568C2118E1FE0072F456 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
+		9B1C56912118E21B0072F456 /* QuestionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,11 @@
 		9B1C565A2118DFD50072F456 /* SparkMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				9B1C568B2118E1FE0072F456 /* controller */,
+				9B1C568E2118E1FE0072F456 /* model */,
+				9B1C568D2118E1FE0072F456 /* view */,
+				9B1C568F2118E1FE0072F456 /* viewmodel */,
 				9B1C565B2118DFD50072F456 /* AppDelegate.swift */,
-				9B1C56892118E0620072F456 /* QuestionsTableViewController.swift */,
 				9B1C565F2118DFD50072F456 /* Main.storyboard */,
 				9B1C56622118DFD70072F456 /* Assets.xcassets */,
 				9B1C56642118DFD70072F456 /* LaunchScreen.storyboard */,
@@ -123,6 +128,36 @@
 				9B1C567D2118DFD70072F456 /* Info.plist */,
 			);
 			path = SparkMVVMUITests;
+			sourceTree = "<group>";
+		};
+		9B1C568B2118E1FE0072F456 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C568C2118E1FE0072F456 /* QuestionsTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9B1C568D2118E1FE0072F456 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C56912118E21B0072F456 /* QuestionsTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9B1C568E2118E1FE0072F456 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9B1C568F2118E1FE0072F456 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B1C568A2118E0620072F456 /* QuestionsTableViewController.swift in Sources */,
 				9B1C565C2118DFD50072F456 /* AppDelegate.swift in Sources */,
+				9B1C56902118E1FE0072F456 /* QuestionsTableViewController.swift in Sources */,
+				9B1C56922118E21B0072F456 /* QuestionsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

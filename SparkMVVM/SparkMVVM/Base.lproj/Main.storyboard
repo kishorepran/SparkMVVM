@@ -18,13 +18,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8IW-lj-XDL">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="questionsTableViewCell" rowHeight="66" id="Ktj-6P-aIb" customClass="QuestionsTableViewCell" customModule="SparkMVVM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8IW-lj-XDL" id="fxS-4k-H5g">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ktj-6P-aIb" id="dPs-Ob-hsU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db7-Lu-PfH">
+                                            <rect key="frame" x="8" y="8" width="359" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68F-qe-j6a">
+                                            <rect key="frame" x="8" y="36.5" width="359" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="68F-qe-j6a" firstAttribute="leading" secondItem="dPs-Ob-hsU" secondAttribute="leading" constant="8" id="63L-AS-CeQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="68F-qe-j6a" secondAttribute="trailing" constant="8" id="IT7-xx-zxy"/>
+                                        <constraint firstItem="db7-Lu-PfH" firstAttribute="top" secondItem="dPs-Ob-hsU" secondAttribute="top" constant="8" id="Rh8-Zj-gxf"/>
+                                        <constraint firstItem="db7-Lu-PfH" firstAttribute="leading" secondItem="dPs-Ob-hsU" secondAttribute="leading" constant="8" id="XeD-AX-oRg"/>
+                                        <constraint firstAttribute="trailing" secondItem="db7-Lu-PfH" secondAttribute="trailing" constant="8" id="bW8-e3-kkj"/>
+                                        <constraint firstItem="68F-qe-j6a" firstAttribute="top" secondItem="db7-Lu-PfH" secondAttribute="bottom" constant="8" id="hCY-9T-gCu"/>
+                                        <constraint firstAttribute="bottom" secondItem="68F-qe-j6a" secondAttribute="bottom" constant="8.5" id="yls-q6-9Xt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="answerLabel" destination="68F-qe-j6a" id="dVj-Hf-9Vt"/>
+                                    <outlet property="questionLabel" destination="db7-Lu-PfH" id="XcJ-41-zxm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
