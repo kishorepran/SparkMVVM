@@ -10,6 +10,9 @@ import UIKit
 
 class QuestionsTableViewController: UITableViewController {
 
+    let viewModel = QuestionsViewModel()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,12 +33,13 @@ class QuestionsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return viewModel.questionsList?.categories.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        guard let category = viewModel.questionsList?.categories[section] else { return 0 }
+        return viewModel.questions(for: category)?.count ?? 0
     }
 
     
@@ -43,7 +47,13 @@ class QuestionsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "questionsTableViewCell", for: indexPath) as! QuestionsTableViewCell
 
         // Configure the cell...
-
+        let category = viewModel.questionsList?.categories[indexPath.section]
+        let questions = viewModel.questions(for: category!)
+        let question = questions?[indexPath.row]
+        
+        cell.questionLabel.text = question?.question
+        cell.answerLabel.text = question?.question_type.type.rawValue
+    
         return cell
     }
     
