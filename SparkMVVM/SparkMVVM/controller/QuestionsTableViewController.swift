@@ -50,8 +50,8 @@ class QuestionsTableViewController: UITableViewController {
         // Configure the cell...
         let item = viewModel.questionSet?[indexPath.section]
         let question = item?.questions[indexPath.row]
-        cell.questionLabel.text = question?.question
-        cell.answerLabel.text = question?.userResponse
+        cell.questionLabel.text = "Q: \(question?.question ?? "N/A")"
+        cell.answerLabel.text = "A: \(question?.userResponse ?? "N/A")"
         return cell
     }
     

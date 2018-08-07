@@ -11,12 +11,13 @@ import UIKit
 class OptionsTableViewController: UITableViewController {
 
     var viewModel : OptionsViewModel!
+    var selectedIndex : IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        
+        title = "Options"
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,7 +50,12 @@ class OptionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let option = viewModel.question.question_type.options[indexPath.row]
         viewModel.question.userResponse = option
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+        var reloadIndex = [indexPath]
+        if let lastIndex = selectedIndex , lastIndex.compare(indexPath) != .orderedSame {
+            reloadIndex.append(lastIndex)
+        }
+        tableView.reloadRows(at: reloadIndex, with: .automatic)
+        selectedIndex = indexPath
     }
     
     /*

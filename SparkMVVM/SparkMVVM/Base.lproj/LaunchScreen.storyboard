@@ -24,10 +24,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-nZ-imD">
+                                <rect key="frame" x="8" y="377" width="359" height="101.5"/>
+                                <string key="text">The app contains a list of questions. Below the questions you can see your choice. Just tap on the cell to see the options for the answer to the question. Your choice for a question will reflect when you come back.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ofH-nZ-imD" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" constant="-16" id="Htz-GY-s8E"/>
                             <constraint firstItem="MdQ-zG-1B2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="PJO-4b-f9f"/>
+                            <constraint firstItem="ofH-nZ-imD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yry-Le-oXc"/>
+                            <constraint firstItem="ofH-nZ-imD" firstAttribute="top" secondItem="MdQ-zG-1B2" secondAttribute="bottom" constant="18" id="jSG-6d-ju4"/>
                             <constraint firstItem="MdQ-zG-1B2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nUW-T7-yXa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
