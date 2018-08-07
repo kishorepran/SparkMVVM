@@ -33,27 +33,23 @@ class QuestionsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return viewModel.questionsList?.categories.count ?? 0
+        return viewModel.questionSet?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        guard let category = viewModel.questionsList?.categories[section] else { return 0 }
-        return viewModel.questions(for: category)?.count ?? 0
+        guard let item = viewModel.questionSet?[section] else { return 0 }
+        return item.questions.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "questionsTableViewCell", for: indexPath) as! QuestionsTableViewCell
-
         // Configure the cell...
-        let category = viewModel.questionsList?.categories[indexPath.section]
-        let questions = viewModel.questions(for: category!)
-        let question = questions?[indexPath.row]
-        
+        let item = viewModel.questionSet?[indexPath.section]
+        let question = item?.questions[indexPath.row]
         cell.questionLabel.text = question?.question
-        cell.answerLabel.text = question?.question_type.type.rawValue
-    
+        cell.answerLabel.text = question?.userResponse
         return cell
     }
     

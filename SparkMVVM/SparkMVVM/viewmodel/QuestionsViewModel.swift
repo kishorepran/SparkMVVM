@@ -18,20 +18,36 @@ class QuestionsViewModel: NSObject {
         return data
     }
     
-    var  questionsList : Questionnaire? {
+    var questionSet : [QuestionSet]?
+    
+    override init() {
+        super.init()
+        prepareQuestions()
+    }
+    
+    private func prepareQuestions () {
         let decoder = JSONDecoder()
         do {
-            return  try decoder.decode(Questionnaire.self, from: localJsonData!)
-        } catch {
+            let item = try decoder.decode(Questionnaire.self, from: localJsonData!)
+            questionSet = formatQuestions(questionnaire: item)
+        } catch  {
             print(error)
-            return nil
         }
     }
     
-    func questions(for category : String) -> [Question]? {
-        let questions = questionsList?.questions.filter({ (questiom) -> Bool in
-            return questiom.category == category
-        })
-        return questions
+    private func formatQuestions (questionnaire : Questionnaire) -> [QuestionSet] {
+        
+        var items : [QuestionSet] = []
+        let categories = questionnaire.categories.sorted()
+        for category in categories {
+            let questions = questionnaire.questions.filter { (question) -> Bool in
+                return question.category == category
+            }
+            if !questions.isEmpty {
+                let item = QuestionSet.init(category, questions)
+                items.append(item)
+            }
+        }
+        return items
     }
 }

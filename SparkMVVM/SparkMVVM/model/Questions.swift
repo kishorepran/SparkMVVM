@@ -6,9 +6,10 @@
 //  Copyright © 2018 Sample Projects. All rights reserved.
 //
 
-//User responses for product
+import Foundation
 
-//User responses for product
+// MARK: - Model for parsing JSON Response
+//Type of User responses for product
 enum QuestionType : String , Codable {
     case single_choice
     case single_choice_conditional
@@ -27,6 +28,13 @@ class Question: Codable {
     let  category : String
     let  question_type : QuestionDetail
     
+    enum CodingKeys: String, CodingKey {
+        case question
+        case category
+        case question_type
+    }
+    
+    var userResponse = "N/A"
 }
 
 class Questionnaire: Codable {
@@ -34,14 +42,21 @@ class Questionnaire: Codable {
     let  categories : [String]
     let  questions : [Question]
     
-    enum CodingKeys: String, CodingKey {
-        case categories
-        case questions
-    }
-    
-    
     init(categories: [String] , questions : [Question] ) {
         self.categories = categories
+        self.questions = questions
+    }
+}
+
+// MARK: - Model for displaying in UI
+
+class QuestionSet: Codable {
+    
+    let  category : String
+    let  questions : [Question]
+    
+    init(_ category: String ,_ questions : [Question] ) {
+        self.category = category
         self.questions = questions
     }
 }
