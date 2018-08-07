@@ -11,8 +11,7 @@ import UIKit
 class QuestionsTableViewController: UITableViewController {
 
     let viewModel = QuestionsViewModel()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +20,10 @@ class QuestionsTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,14 +55,22 @@ class QuestionsTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let item = viewModel.questionSet?[indexPath.section] {
+            let question = item.questions[indexPath.row]
+            performSegue(withIdentifier: "question-option", sender: question)
+        }
+    }
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let destinationVC = segue.destination as? OptionsTableViewController , let item  = sender as? Question  {
+            destinationVC.viewModel = OptionsViewModel.init(item)
+        }
     }
-    */
-
+    
 }

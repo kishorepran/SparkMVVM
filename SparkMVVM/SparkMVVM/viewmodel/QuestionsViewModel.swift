@@ -6,9 +6,7 @@
 //  Copyright © 2018 Sample Projects. All rights reserved.
 //
 
-import UIKit
-
-
+import Foundation
 
 class QuestionsViewModel: NSObject {
     
