@@ -47,12 +47,19 @@ struct RangeOption: Codable {
 class Condition: Codable {
     
     let  predicate : [String: [String]]
-    let  if_positive : RangedQuestion
+    let  positiveQuestion : RangedQuestion
     
-    init(predicate: [String: [String]] , if_positive : RangedQuestion ) {
-        self.predicate = predicate
-        self.if_positive = if_positive
+    enum CodingKeys: String, CodingKey {
+        case predicate
+        case positiveQuestion = "if_positive"
     }
+    
+    init(predicate: [String: [String]] , positiveQuestion : RangedQuestion ) {
+        self.predicate = predicate
+        self.positiveQuestion = positiveQuestion
+    }
+    
+    var isPositive = false
 }
 
 //Framework for an item to qualify as a question
