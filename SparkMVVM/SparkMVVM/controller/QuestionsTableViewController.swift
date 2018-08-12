@@ -68,7 +68,7 @@ class QuestionsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if let destinationVC = segue.destination as? OptionsTableViewController , let item  = sender as? Question  {
+        if let destinationVC = segue.destination as? OptionsTableViewController , let item  = sender as? SingleChoiceQuestion  {
             destinationVC.viewModel = OptionsViewModel.init(item)
         }
     }

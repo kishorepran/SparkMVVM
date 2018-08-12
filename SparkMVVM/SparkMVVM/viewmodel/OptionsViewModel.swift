@@ -10,9 +10,9 @@ import Foundation
 
 class OptionsViewModel: NSObject {
     
-    var question : Question
+    var question : SingleChoiceQuestion
     
-    init(_ question : Question) {
+    init(_ question : SingleChoiceQuestion) {
         self.question = question
         super.init()
     }
