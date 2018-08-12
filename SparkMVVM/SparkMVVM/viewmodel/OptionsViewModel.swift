@@ -29,7 +29,7 @@ class OptionsViewModel: NSObject {
         }
     }
     
-    func numberOfRows(for question_type : QuestionType , _ section : Int ) -> Int {
+    private func numberOfRows(for question_type : QuestionType , _ section : Int ) -> Int {
         switch question_type {
         case .single_choice_conditional:
             if let conditon = question.question_type.condition , conditon.isPositive == true , section == 1 {
