@@ -19,5 +19,7 @@ SDK: iOS 11.4
 https://stackoverflow.com/questions/48314724/swift-codable-parse-json-array-which-can-contain-different-data-type
 Having different Class / Struct construct in comparison to the JSON structure sent in the response.
 https://www.raywenderlich.com/382-encoding-decoding-and-serialization-in-swift-4
-
+2. Enable UI test to move the slider. Catch the slider value in code and match that with the label.
+3. Catch the option selected in UI test and match it with the answer when it reflects as soon as the user returns back.
+4. Override encoding and decoding methods of question types to support user response. Such as in case when we have a value we decode it, if we dont we initiate with "N/A". Same for encoding as well.
 
