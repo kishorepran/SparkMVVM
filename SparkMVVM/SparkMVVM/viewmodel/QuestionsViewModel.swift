@@ -10,6 +10,7 @@ import Foundation
 
 class QuestionsViewModel: NSObject {
     
+    //Returns data from a given JSON file file stored locally.
     var localJsonData : Data? {
         guard let jsonPath = Bundle.main.path(forResource: "personality_test", ofType: "json") else { return nil }
         let data = NSData.init(contentsOfFile: jsonPath) as Data?
@@ -23,6 +24,7 @@ class QuestionsViewModel: NSObject {
         prepareQuestions()
     }
     
+    //Parse JSON data as it would be recieved from server.
     private func prepareQuestions () {
         let decoder = JSONDecoder()
         do {
@@ -33,6 +35,7 @@ class QuestionsViewModel: NSObject {
         }
     }
     
+    //Format the JSON data into a format which suits the use case of the application.
     private func formatQuestions (questionnaire : Questionnaire) -> [QuestionSet] {
         
         var items : [QuestionSet] = []
