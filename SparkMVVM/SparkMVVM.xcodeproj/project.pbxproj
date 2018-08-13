@@ -18,8 +18,12 @@
 		9B1C56942118E53A0072F456 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C56932118E53A0072F456 /* Questions.swift */; };
 		9B1C56962118EAE10072F456 /* personality_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C56952118EAE10072F456 /* personality_test.json */; };
 		9B1C56982118EB140072F456 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1C56972118EB140072F456 /* QuestionsViewModel.swift */; };
+		9B717F8821215FB500F9AC0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B717F8721215FB400F9AC0E /* GoogleService-Info.plist */; };
 		9BBF9F5B211A1DBE00E3015F /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF9F5A211A1DBE00E3015F /* OptionsTableViewController.swift */; };
 		9BBF9F5D211A203900E3015F /* OptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBF9F5C211A203900E3015F /* OptionsViewModel.swift */; };
+		B35C78F60563F48E7EC5DBE8 /* Pods_SparkMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13BE9A1CE25B72BA415878 /* Pods_SparkMVVM.framework */; };
+		B57178A6FCC6004A93222155 /* Pods_SparkMVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4EB4C555F69434EB73954 /* Pods_SparkMVVMTests.framework */; };
+		F20C87FBBE90F29A433E55A8 /* Pods_SparkMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51C0C739535D199011D8E10 /* Pods_SparkMVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043D5D508A0CED0F74F51B26 /* Pods-SparkMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVM/Pods-SparkMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		292ADAA8151DD1867D36A429 /* Pods-SparkMVVMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVMUITests/Pods-SparkMVVMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2FEF9EBE0C623E446F5B052E /* Pods-SparkMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVM/Pods-SparkMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		3CB4EB4C555F69434EB73954 /* Pods_SparkMVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkMVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7BDFB3F4F6F2ED758E695B /* Pods-SparkMVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVMTests/Pods-SparkMVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		919E1C09DDE33EF39AEFE06C /* Pods-SparkMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVMUITests/Pods-SparkMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1C56582118DFD50072F456 /* SparkMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1C565B2118DFD50072F456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B1C56602118DFD50072F456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,8 +67,12 @@
 		9B1C56932118E53A0072F456 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		9B1C56952118EAE10072F456 /* personality_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personality_test.json; sourceTree = "<group>"; };
 		9B1C56972118EB140072F456 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		9B717F8721215FB400F9AC0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BBF9F5A211A1DBE00E3015F /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
 		9BBF9F5C211A203900E3015F /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewModel.swift; sourceTree = "<group>"; };
+		B51C0C739535D199011D8E10 /* Pods_SparkMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF222B9DCCC55666FED75663 /* Pods-SparkMVVMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SparkMVVMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SparkMVVMTests/Pods-SparkMVVMTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA13BE9A1CE25B72BA415878 /* Pods_SparkMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SparkMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35C78F60563F48E7EC5DBE8 /* Pods_SparkMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57178A6FCC6004A93222155 /* Pods_SparkMVVMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20C87FBBE90F29A433E55A8 /* Pods_SparkMVVMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F8A808B346D8C48CD01EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA13BE9A1CE25B72BA415878 /* Pods_SparkMVVM.framework */,
+				3CB4EB4C555F69434EB73954 /* Pods_SparkMVVMTests.framework */,
+				B51C0C739535D199011D8E10 /* Pods_SparkMVVMUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B1C564F2118DFD50072F456 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +120,8 @@
 				9B1C566F2118DFD70072F456 /* SparkMVVMTests */,
 				9B1C567A2118DFD70072F456 /* SparkMVVMUITests */,
 				9B1C56592118DFD50072F456 /* Products */,
+				B97BF4480A80BCCC4561661B /* Pods */,
+				12F8A808B346D8C48CD01EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +146,7 @@
 				9B1C565F2118DFD50072F456 /* Main.storyboard */,
 				9B1C56622118DFD70072F456 /* Assets.xcassets */,
 				9B1C56642118DFD70072F456 /* LaunchScreen.storyboard */,
+				9B717F8721215FB400F9AC0E /* GoogleService-Info.plist */,
 				9B1C56672118DFD70072F456 /* Info.plist */,
 			);
 			path = SparkMVVM;
@@ -175,6 +205,19 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		B97BF4480A80BCCC4561661B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF9EBE0C623E446F5B052E /* Pods-SparkMVVM.debug.xcconfig */,
+				043D5D508A0CED0F74F51B26 /* Pods-SparkMVVM.release.xcconfig */,
+				5E7BDFB3F4F6F2ED758E695B /* Pods-SparkMVVMTests.debug.xcconfig */,
+				DF222B9DCCC55666FED75663 /* Pods-SparkMVVMTests.release.xcconfig */,
+				919E1C09DDE33EF39AEFE06C /* Pods-SparkMVVMUITests.debug.xcconfig */,
+				292ADAA8151DD1867D36A429 /* Pods-SparkMVVMUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B1C56802118DFD70072F456 /* Build configuration list for PBXNativeTarget "SparkMVVM" */;
 			buildPhases = (
+				7DF8708F163852B31513B091 /* [CP] Check Pods Manifest.lock */,
 				9B1C56542118DFD50072F456 /* Sources */,
 				9B1C56552118DFD50072F456 /* Frameworks */,
 				9B1C56562118DFD50072F456 /* Resources */,
+				1230AA3D77529531BDAFC11F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B1C56832118DFD70072F456 /* Build configuration list for PBXNativeTarget "SparkMVVMTests" */;
 			buildPhases = (
+				9913386A3230CB2A84688D7C /* [CP] Check Pods Manifest.lock */,
 				9B1C56682118DFD70072F456 /* Sources */,
 				9B1C56692118DFD70072F456 /* Frameworks */,
 				9B1C566A2118DFD70072F456 /* Resources */,
@@ -217,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B1C56862118DFD70072F456 /* Build configuration list for PBXNativeTarget "SparkMVVMUITests" */;
 			buildPhases = (
+				0A3F33BF3C09438CA94F1A04 /* [CP] Check Pods Manifest.lock */,
 				9B1C56732118DFD70072F456 /* Sources */,
 				9B1C56742118DFD70072F456 /* Frameworks */,
 				9B1C56752118DFD70072F456 /* Resources */,
@@ -281,6 +328,7 @@
 			files = (
 				9B1C56662118DFD70072F456 /* LaunchScreen.storyboard in Resources */,
 				9B1C56632118DFD70072F456 /* Assets.xcassets in Resources */,
+				9B717F8821215FB500F9AC0E /* GoogleService-Info.plist in Resources */,
 				9B1C56962118EAE10072F456 /* personality_test.json in Resources */,
 				9B1C56612118DFD50072F456 /* Main.storyboard in Resources */,
 			);
@@ -301,6 +349,85 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3F33BF3C09438CA94F1A04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkMVVMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1230AA3D77529531BDAFC11F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SparkMVVM/Pods-SparkMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SparkMVVM/Pods-SparkMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF8708F163852B31513B091 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9913386A3230CB2A84688D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SparkMVVMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B1C56542118DFD50072F456 /* Sources */ = {
@@ -484,6 +611,7 @@
 		};
 		9B1C56812118DFD70072F456 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FEF9EBE0C623E446F5B052E /* Pods-SparkMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -503,6 +631,7 @@
 		};
 		9B1C56822118DFD70072F456 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043D5D508A0CED0F74F51B26 /* Pods-SparkMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -522,6 +651,7 @@
 		};
 		9B1C56842118DFD70072F456 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7BDFB3F4F6F2ED758E695B /* Pods-SparkMVVMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +672,7 @@
 		};
 		9B1C56852118DFD70072F456 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF222B9DCCC55666FED75663 /* Pods-SparkMVVMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +693,7 @@
 		};
 		9B1C56872118DFD70072F456 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919E1C09DDE33EF39AEFE06C /* Pods-SparkMVVMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -581,6 +713,7 @@
 		};
 		9B1C56882118DFD70072F456 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292ADAA8151DD1867D36A429 /* Pods-SparkMVVMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
