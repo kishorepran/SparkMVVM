@@ -20,4 +20,8 @@ https://stackoverflow.com/questions/48314724/swift-codable-parse-json-array-whic
 Having different Class / Struct construct in comparison to the JSON structure sent in the response.
 https://www.raywenderlich.com/382-encoding-decoding-and-serialization-in-swift-4
 
-
+## Firebase
+Installation:
+Firebase iOS docuemntation: https://firebase.google.com/docs/database/ios/start
+Did not add "GoogleService-Info.plist" as it contains private data that might be used by other people for using the data base.
+To generate the plist file. Go to Firebase Console > Create a project > Add iOS App > Follow the quick start guide OR Find the file in > Project Overview > Click settings icon > Select project settings > See your iOS app in the list select your app > download the latest config file.
